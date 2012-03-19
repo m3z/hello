@@ -15,7 +15,7 @@
 			<protocolStack version="0.1"></protocolStack>
 		</node>
 		<node id="013" type="openflowSwitch">
-			<name>switch1</name>
+			<name>switch0</name>
 			<interfaces version="0.1">
 				<interface id="014">
 					<name>host1.0</name>
@@ -36,7 +36,7 @@
 			<protocolStack version="0.1"></protocolStack>
 		</node>
 		<node id="016" type="openflowSwitch">
-			<name>switch2</name>
+			<name>switch1</name>
 			<interfaces version="0.1">
 				<interface id="017">
 					<name>eth3</name>
