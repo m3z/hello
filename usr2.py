@@ -31,7 +31,7 @@ def setupTopology():
                 interfaceList = topology.getOpenflowSwitchInterface(openflowSwitch)
 		inportList = cmd.getPort(dpidlist[i])
 		for	 interface in interfaceList:
-                        cmd.addFlowSpace(dpidlist[i],'20','in_port='+ inportList[interface],'Slice:slice1=4')
+                        cmd.addFlowSpace(dpidlist[i],'20','in_port='+ inportList[interface],'Slice:slice2=4')
                 i=i+1     
                 
 if __name__ == '__main__':
