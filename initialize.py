@@ -15,7 +15,7 @@ def cleanAll():
         cmd.cleanFlowSpace()
 
 def startOVS():
-        
+        topology = topologyParser.Topology()
         openflowSwitchList = topology.getOpenflowSwitch()
 	for openflowSwitch in openflowSwitchList:
 		cmd.ovsOpenflowd(openflowSwitch, '127.0.0.1', 6633)
