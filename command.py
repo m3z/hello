@@ -93,12 +93,12 @@ def cleanFlowSpace():
                         delFlowSpace(flowspace.group())
 
 def createSlice(slicename,controller,email):
-        cmdString = "createSlice " + slicename + ' ' + controller + ' ' + email
+        cmdString = "fvctl --passwd-file=/root/.fvp createSlice " + slicename + ' ' + controller + ' ' + email
         os.system(cmdString)
         print cmdString
 
 def addFlowSpace(dpid,priority,flow_match,sliceActions):
-        cmdString = 'addFlowSpace '+dpid+' '+priority+' '+flow_match+' '+sliceActions
+        cmdString = 'fvctl --passwd-file=/root/.fvp addFlowSpace '+dpid+' '+priority+' '+flow_match+' '+sliceActions
         os.system(cmdString)
         print cmdString
 
