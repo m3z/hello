@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<topology version="0.1">
+    <nodes version="0.1">
+		<node id="003" type="host">
+			<name>host3</name>
+			<interfaces version="0.1"></interfaces>
+			<software version="0.1"></software>
+			<protocolStack version="0.1"></protocolStack>
+		</node>
+		<node id="004" type="host">
+			<name>host4</name>
+			<interfaces version="0.1"></interfaces>
+			<software version="0.1"></software>
+			<protocolStack version="0.1"></protocolStack>
+		</node>
+		<node id="013" type="openflowSwitch">
+			<name>switch0</name>
+			<interfaces version="0.1">
+				<interface id="014">
+					<name>host3.0</name>
+					<ipAddress></ipAddress>
+					<ipv6Address></ipv6Address>
+					<mtu></mtu>
+					<status>active</status>
+				</interface>
+				<interface id="015">
+					<name>eth4</name>
+					<ipAddress></ipAddress>
+					<ipv6Address></ipv6Address>
+					<mtu></mtu>
+					<status>active</status>
+				</interface>
+			</interfaces>
+			<software version="0.1"></software>
+			<protocolStack version="0.1"></protocolStack>
+		</node>
+		<node id="016" type="openflowSwitch">
+			<name>switch1</name>
+			<interfaces version="0.1">
+				<interface id="017">
+					<name>eth5</name>
+					<ipAddress></ipAddress>
+					<ipv6Address></ipv6Address>
+					<mtu></mtu>
+					<status>active</status>
+				</interface>
+				<interface id="018">
+					<name>host4.0</name>
+					<ipAddress></ipAddress>
+					<ipv6Address></ipv6Address>
+					<mtu></mtu>
+					<status>active</status>
+				</interface>
+			</interfaces>
+			<software version="0.1"></software>
+			<protocolStack version="0.1"></protocolStack>
+		</node>
+	</nodes>
+
+	<links version="0.1"></links>
+</topology>
